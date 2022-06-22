@@ -1,0 +1,12 @@
+name: Act on release created
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
